@@ -1,0 +1,51 @@
+p {
+  background-color: aqua;
+  /* Used to set the color of background */
+
+  color: black;
+  /*Used to set the color of foreground */
+
+  text-decoration: none;
+  /* text-decoration : underline / overline / line-through */
+
+  text-transform: uppercase;
+  /* text-tranform : uppercase / lowercase / capitalize / none */
+
+  height: px;
+  /* By default, it sets the content area height of the element */
+
+  width: px;
+  /* By default, it sets the content area width of the element */
+
+  border: 1px solid red;
+  /* Used to set an element's border */
+
+  border-radius: 1px;
+  /* Used to round the corners of an element's outer border edge */
+
+  display: none;
+  /* --- Display Property-----
+  inline - Takes only the space required by the element. (no margin/ padding)
+  block - Takes full space available in width.
+  inline-block - Similar to inline but we can set margin & padding.
+  none - To remove element from document flow. */
+
+  visibility: hidden;
+  /*When visibility is set to none, space for the element is reserved.
+  But for display set to none, no space is reserved or blocked for the
+  element. */
+
+  width: 2%;
+  /* Percentage (%)
+  It is often used to define a size as relative to an element's parent object. */
+
+  width: 100vw;
+  height: 100vh;
+
+  /* 
+  vh :- viewport height
+  vw :- viewport width
+  100vh == 100% display width
+  100vw == 100% display height 
+  */
+}

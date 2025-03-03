@@ -1,0 +1,134 @@
+body {
+  text-align: center;
+}
+
+#container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  /*It sets how flex items are placed in the flex container,
+   along which axis and direction.*/
+
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  /* align-content: flex-start; */
+  /* align-content: center; */
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+#box1 {
+  background-color: blue;
+  height: 80px;
+  flex-shrink: 2;
+}
+#box2 {
+  background-color: yellow;
+  height: 120px;
+}
+#box3 {
+  background-color: blueviolet;
+  height: 150px;
+}
+#box4 {
+  background-color: aquamarine;
+  flex-shrink: 2;
+}
+#box5 {
+  background-color: brown;
+  /* align-self: flex-end; */
+}
+
+/* Flexbox Direction
+It sets how flex items are placed in the flex container, along which axis and direction.
+flex-direction : row; (default)
+flex-direction : row-reverse;
+flex-direction : column;
+flex-direction : column-reverse; */
+
+/* Flex Properties
+--------------for Flex Container-------------------
+justify-content :- alignment along the main axis.
+flex-start / flex-end / centre / space-evenly /
+flex-wrap :- nowrap / wrap / wrap-reverse
+align-items :- alignment along the cross axis.
+align-content :- alignment of space between & around the content along cross-axis */
+
+/* Flex Properties
+----------------for Flex Item--------------------
+align-self :- alignment of individual along the cross axis.
+flex-grow :- how much a flex item will grow relative to the rest of the flex items if
+space is available
+flex-shrink :- how much a flex item will shrink relative to the rest of the flex items if
+space is available */
+
+/* -----------Transitions---------
+Transitions enable you to define the transition between two states of an element.
+to add some animation to elements
+timing function is how the transition should be applied
+show hover
+transition-property :- property you want to transition (font-size, width etc.)
+transition-duration :- 2s / 4ms ..
+transition-timing-function :- ease-in / ease-out / linear / steps ..
+transition-delay :- 2s / 4ms .. */
+
+/* --------Transition Shorthand---------
+property name | duration | timing-function | delay
+transition:- font-size 2s ease-in-out 0.2s;
+to add some animation to elements */
+
+/* ------CSS Transform------------------
+Used to apply 2D & 3D transformations to an element
+
+transform: rotate(45deg); */
+
+/*  
+transform: scale(2);
+scale
+x & y axis separately
+transform: scale(0.5);
+transform: scaleX(0.5);
+transform: scaleY(0.5); */
+/* 
+ 
+transform: translate(20px);
+translate
+transform: translateX(20px);
+transform: translateY(20px); */
+
+/*
+transform: skew (30deg); */
+
+/* ------------------Animation-------------------
+@keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+} */
+
+/* -------------Animation Properties---------------
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction */
+/* 
+
+% in Animation
+@keyframe myName {
+ 0% { font-size : 20px; }
+ 50% { font-size : 30px; }
+ 100% { font-size : 40px; }
+} */
