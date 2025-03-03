@@ -1,0 +1,28 @@
+* {
+  /* This is universal selector   */
+  background-color: aquamarine;
+}
+
+#box1 {
+  /* This is Id selector */
+  background-color: blue;
+}
+
+.box2 {
+  /* This is class selector   */
+  background-color: blueviolet;
+}
+p {
+  /* This is element selector     */
+  background-color: brown;
+}
+article {
+  /* This is element selector     */
+  background-color: antiquewhite;
+}
+
+p,
+article {
+  /* This is group selector   */
+  background-color: yellow;
+}
