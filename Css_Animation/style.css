@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px soild black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 2ms;
+  animation-iteration-count: infinite;
+}
+
+/*--------- Animation--------------
+To enimate css element
+@keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+} */
+@keyframes myanimation {
+  from {
+    background-color: blue;
+    font-size: 20px;
+  }
+  to {
+    background-color: brown;
+    font-size: 30px;
+  }
+}
