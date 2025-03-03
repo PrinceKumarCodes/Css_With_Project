@@ -52,10 +52,9 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   /* Font size of the root element. */
-
-
 }
-d{
-    /* ---------Others--------------
+d {
+  /* ---------Others--------------
 1vh: relative to 1% viewport height of the body or screen
 1vw : relative to 1% viewport width of the body or screen */
+}
