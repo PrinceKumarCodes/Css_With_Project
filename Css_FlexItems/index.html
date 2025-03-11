@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            display: flex;
+            /* flex-flow: row wrap; */
+            /* flex-flow: row wrap means 
+            flex-direction: row
+            flex-wrap: wrap;   */
+            justify-content: start;
+            align-items: center;
+            height: 400px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 2px;
+
+        }
+
+        #item1 {
+            background-color: blue;
+            /* order: 2; */
+
+            /* -----------------order properties ,Default value is 0--------------------*/
+            /* The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending order value and then by their source code order. Items not given an explicit order value are assigned the default value of 0. */
+
+        }
+
+        #item2 {
+            background-color: aqua;
+            /* order: -1; */
+            /* flex-shrink: 4; */
+            /* Shrink 4 ⬆️ times more compared to other item boxes */
+        }
+
+        #item3 {
+            background-color: brown;
+            /* order: 4; */
+            /* flex-grow: 4; */
+
+            /* ------------------defition of flex-grow-------------------
+            The flex-grow property in CSS defines how much an item can grow relative to other flex items inside a flex container. A higher value makes the item expand more compared to others.
+            */
+        }
+
+        #item4 {
+            background-color: blueviolet;
+            /* order: 1; */
+            flex-basis: 200px;
+
+            /* 
+            The flex-basis property in CSS sets the initial size of a flex item before it grows or shrinks. It can be defined in pixels, percentages, or auto (based on content size). 
+            */
+
+            /* 
+            flex-basis: auto;
+            flex-basis: 0;
+            flex-basis: 200px; 
+            */
+        }
+
+        #item5 {
+            background-color: rgb(127, 127, 9);
+            align-self: self-end;
+            /* 
+            The align-self CSS property overrides a grid or flex item's align-items value. In grid, it aligns the item inside the grid area. In flexbox, it aligns the item on the cross axis.
+            */
+
+            /* Keyword values */
+            align-self: auto;
+            align-self: normal;
+
+            /* Positional alignment */
+            /* align-self does not take left and right values */
+            align-self: center;
+            /* Put the item around the center */
+            align-self: start;
+            /* Put the item at the start */
+            align-self: end;
+            /* Put the item at the end */
+            align-self: self-start;
+            /* Align the item flush at the start */
+            align-self: self-end;
+            /* Align the item flush at the end */
+            align-self: flex-start;
+            /* Put the flex item at the start */
+            align-self: flex-end;
+            /* Put the flex item at the end */
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="item1">Box 1</div>
+        <div class="box" id="item2">Box 2</div>
+        <div class="box" id="item3">Box 3</div>
+        <div class="box" id="item4">Box 4</div>
+        <div class="box" id="item5">Box 5</div>
+    </div>
+</body>
+
+</html>

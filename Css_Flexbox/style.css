@@ -7,18 +7,61 @@ body {
   height: 600px;
   display: flex;
   /*It sets how flex items are placed in the flex container,
-   along which axis and direction.*/
+  along which axis and direction.*/
 
-  /* flex-direction: row-reverse; */
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse;*/
+  /* flex-direction: column;*/
+  /* flex-direction: column-reverse;*/
 
-  flex-direction: row;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  /* 
+  justify-content: start;
+  justify-content:end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly; 
+  */
+
+  display: flex;
+  flex-direction: row;
+  /* flex-direction row / row-reverse / column / column-reverse  */
+  flex-wrap: wrap;
+  /*flex-wrap:wrap [wrap | wrap-reverse | no-wrap]  by default:-no wrap */
+  flex-flow: column;
+  /* 
+  The flex-flow CSS shorthand property specifies the direction of a flex container, as well as its wrapping behavior.
+  flex-flow: row wrap;
+  flex-flow: row-reverse nowrap;
+  flex-flow: column wrap-reverse;
+  flex-flow: column wrap; 
+  */
+
   align-items: flex-start;
-  /* align-content: flex-start; */
-  /* align-content: center; */
+
+  /* 
+  By default align-items:stretch;
+  align-items: stretch; ---> stretch means that increase width and hight to fit in parent's space with all items.
+  align-items: start;
+  align-items: end;
+  align-items: center; 
+  */
+
+  align-content: flex-start;
+  /* align-content does not take left and right values,
+
+    align-content: start;
+    align-content: center;
+    align-content: end;
+    align-content: flex-start;
+    align-content: flex-end; 
+
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: stretch;
+    
+  */
 }
 
 div {

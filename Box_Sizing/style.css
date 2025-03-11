@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Explanation:
+  Normally, with box-sizing: content-box; (the default),the width and height only apply to the content, 
+  and padding and borders add to the overall size.
+
+  With box-sizing: border-box; the specified width and height include the content, padding, and border, 
+  preventing unexpected layout shifts. */
+}
+
+.box1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.box2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid green;
+}
+
+span {
+  height: 300px;
+  width: 200px;
+  /* Height and width will not work with span tag because span tag is an inline element  */
+}
