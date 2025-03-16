@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+
+        border: 1px solid black;
+        margin: 2px;
+        padding: 2px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        border: 2px solid red;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    #header-1 {
+        /* offset-x | offset-y | blur-radius | color */
+        text-shadow: 10px 1px 1px red;
+
+
+        /* color | offset-x | offset-y | blur-radius */
+        text-shadow: blue 1px 0px 10px;
+
+        text-shadow: 5px 5px red;
+
+        /* Use defaults for color and blur-radius */
+        text-shadow: 5px 5px;
+
+
+        text-shadow: white 10px 10px;
+
+
+    }
+
+    /* multiple text shadow add at this paragraph */
+    #para1 {
+        text-shadow: 2px 0px green,
+            0px 2px red,
+            -2px 0px blue,
+            0px -2px magenta;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="header-1">Welcome to Prince code</h1>
+            <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque impedit incidunt dolorum
+                distinctio
+                ipsam aliquid perspiciatis est facere dicta.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight-grid-layout-Homework</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            background-color: black;
+            width: 98vw;
+            height: 98vh;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 3rem;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: blue;
+
+        }
+
+        #box2,
+        #box6 {
+            background-color: rgb(252, 160, 98);
+        }
+
+        #box1,
+        #box7 {
+            background-color: rgb(252, 96, 90);
+        }
+
+        #box3,
+        #box4,
+        #box5 {
+            background-color: rgb(52, 219, 186);
+        }
+
+        #box8,
+        #box9,
+        #box10 {
+            grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: rgb(254, 130, 92);
+
+        }
+
+        #box11,
+        #box12,
+        #box13,
+        #box14,
+        #box15 {
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: rgb(52, 219, 186);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <div class="box" id="box5">E</div>
+        <div class="box" id="box6">F</div>
+        <div class="box" id="box7">G</div>
+        <div class="box" id="box8">H</div>
+        <div class="box" id="box9">I</div>
+        <div class="box" id="box10">J</div>
+        <div class="box" id="box11">K</div>
+        <div class="box" id="box12">L</div>
+        <div class="box" id="box13">M</div>
+        <div class="box" id="box14">N</div>
+        <div class="box" id="box15">O</div>
+    </div>
+</body>
+
+</html>

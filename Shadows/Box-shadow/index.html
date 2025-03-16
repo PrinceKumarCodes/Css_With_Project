@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .root {
+        /* you must create this variable inside root , then you will be able to access from anywhere in the code  */
+
+        --border-color: green;
+        --secondary-color: gray;
+    }
+
+    .container {
+        background-color: gray;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: gray;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+        /* X value, Y value  Color*/
+        box-shadow: 10px 20px white;
+
+        /* X value, Y value, Blur value, Spread value , Color */
+        box-shadow: 10px 10px 5px 5px white;
+
+        /* box-shadow: -10px -10px 5px 1px white 
+        */
+        box-shadow: none;
+        /* A color and two length values */
+        box-shadow: red 60px -16px;
+
+        /* Three length values and a color */
+        box-shadow: 10px 5px 5px black;
+
+        /* Four length values and a color */
+        box-shadow: 2px 2px 2px 1px rgba(69, 69, 69, 0.8);
+
+        /* inset, length values, and a color */
+        /* box-shadow: inset 5em 1em gold; */
+
+        /* Any number of shadows, separated by commas */
+
+        box-shadow:
+            3px 0px 20px red,
+            0px 3px 20px blue,
+            -3px 0px 20px green,
+            0px -3px 20px yellow;
+
+        /* ----------customize color variable ---------*/
+        --primary-color: blue;
+        border: var(--primary-color);
+        /* you must create this variable inside root , then you will be able to access from anywhere in the code  */
+
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome to my platform</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cumque dignissimos eius expedita magni
+                officia! Repudiandae quos iusto voluptas perspiciatis!</p>
+        </div>
+    </div>
+</body>
+
+</html>

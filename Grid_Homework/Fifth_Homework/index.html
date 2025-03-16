@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fifth-grid-layout homework</title>
+    <style>
+        .container {
+
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #first-color {
+            background: rgb(254, 130, 92);
+        }
+
+        #second-color {
+            background-color: rgb(26, 193, 162);
+        }
+
+        #third-color {
+            background-color: rgb(252, 97, 88);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="second-color">A</div>
+        <div class="box" id="first-color">B</div>
+        <div class="box" id="third-color">C</div>
+        <div class="box" id="second-color">D</div>
+        <div class="box" id="first-color">E</div>
+        <div class="box" id="second-color">F</div>
+        <div class="box" id="first-color">G</div>
+        <div class="box" id="second-color">H</div>
+        <div class="box" id="third-color">I</div>
+        <div class="box" id="first-color">J</div>
+        <div class="box" id="second-color">K</div>
+        <div class="box" id="first-color">L</div>
+        <div class="box" id="second-color">M</div>
+        <div class="box" id="third-color">N</div>
+        <div class="box" id="first-color">O</div>
+        <div class="box" id="second-color">P</div>
+        <div class="box" id="first-color">Q</div>
+        <div class="box" id="second-color">R</div>
+    </div>
+</body>
+
+</html>

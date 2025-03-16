@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixth-grid-layout Homework</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            background-color: black;
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr); */
+            grid-template-areas:
+                "header header box3 box4"
+                "box5 box6 box7 box8"
+                "sidebar sidebar box11 box12"
+                "sidebar sidebar box15 box16"
+                "footer footer footer box20"
+            ;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            height: 100px;
+            border: 2px solid black;
+            background: rgb(69, 108, 237);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #header {
+            grid-area: header;
+            background-color: rgb(252, 97, 88);
+        }
+
+        #box3 {
+            grid-area: box3;
+            background-color: rgb(0, 169, 132);
+        }
+
+        #box4 {
+            grid-area: box4;
+            background-color: rgb(252, 160, 96);
+
+        }
+
+        #box5 {
+            grid-area: box5;
+            background-color: rgb(252, 160, 96);
+
+        }
+
+        #box6 {
+            grid-area: box6;
+            background-color: rgb(0, 169, 132);
+
+        }
+
+        #box7 {
+            grid-area: box7;
+            background-color: rgb(0, 169, 132);
+
+        }
+
+        #box8 {
+            grid-area: box8;
+            background-color: black;
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+            background-color: rgb(252, 97, 88);
+            height: 235px;
+
+        }
+
+        #box11 {
+            grid-area: box11;
+            background-color: rgb(0, 169, 132);
+
+        }
+
+        #box12 {
+            grid-area: box12;
+            background-color: rgb(252, 97, 88);
+
+
+        }
+
+        #box15 {
+            grid-area: box15;
+            background-color: rgb(62, 154, 134);
+
+        }
+
+
+        #box16 {
+            grid-area: box16;
+            background-color: black;
+        }
+
+        #footer {
+            grid-area: footer;
+            background-color: rgb(54, 218, 186);
+        }
+
+        #box20 {
+            grid-area: box20;
+            background-color: rgb(252, 97, 88);
+
+        }
+
+        /* 
+        #box1,
+        #box2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #box9,
+        #box10,
+        #box13,
+        #box14 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="header">A</div>
+        <div class="box" id="header">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+        <div class="box" id="box5">E</div>
+        <div class="box" id="box6">F</div>
+        <div class="box" id="box7">G</div>
+        <div class="box" id="box8">H</div>
+        <div class="box" id="sidebar">I</div>
+        <div class="box" id="sidebar">J</div>
+        <div class="box" id="box11">K</div>
+        <div class="box" id="box12">L</div>
+        <div class="box" id="sidebar">M</div>
+        <div class="box" id="sidebar">N</div>
+        <div class="box" id="box15">O</div>
+        <div class="box" id="box16">P</div>
+        <div class="box" id="footer">Q</div>
+        <div class="box" id="footer">R</div>
+        <div class="box" id="footer">S</div>
+        <div class="box" id="box20">T</div>
+    </div>
+</body>
+
+</html>

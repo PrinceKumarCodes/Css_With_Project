@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Second-layout-Homework</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+
+        #main-content {
+            grid-area: main-content;
+            background-color: rgb(252, 97, 88);
+
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+            background: rgb(252, 160, 98);
+        }
+
+        #fourth {
+            grid-area: fourth;
+            background: rgb(1, 168, 134);
+        }
+
+        #fifth {
+            grid-area: fifth;
+            background-color: rgb(1, 168, 134);
+        }
+
+
+
+        .container {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            gap: 1rem;
+            grid-template-areas: "main-content main-content sidebar"
+                "fourth fifth sidebar";
+
+
+
+
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 5rem;
+            background: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="main-content">main content</div>
+        <div class="box" id="main-content">main content</div>
+        <div class="box" id="sidebar">sidebar</div>
+        <div class="box" id="fourth">Fourth</div>
+        <div class="box" id="fifth">Fifth</div>
+        <div class="box" id="sidebar">sidebar</div>
+    </div>
+
+</body>
+
+</html>

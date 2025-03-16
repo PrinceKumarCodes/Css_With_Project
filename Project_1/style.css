@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------header part----------------- */
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-x: none;
+}
+.navContainer {
+  width: 100%;
+  /* background-color: rgb(75, 75, 158); */
+  background: rgb(63, 71, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 71, 251, 1) 0%,
+    rgba(252, 70, 228, 1) 100%
+  );
+}
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  color: white;
+  font-size: 28px;
+}
+.navLink {
+  display: flex;
+  gap: 30px;
+}
+.navLink a {
+  text-decoration: none;
+  color: white;
+}
+
+/*---------------------main part----------------------*/
+.contentBox {
+  width: 80%;
+  height: 100%;
+
+  /* when you will set margin auto then box placed in center of the parent box */
+  margin: auto;
+
+  border: 1px solid gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+
+.contentBox .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contentBox .item img {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  border: none;
+  transition: all 1s ease-in 0s;
+  /* box-shadow: 1px 1px 1px 1px rgb(38, 38, 38); */
+}
+.contentBox .item .rightBox:hover {
+  transform: scale(1.1);
+}
+.leftBox {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px;
+  /* border: 1px solid gray; */
+}
+.leftBox ul {
+  padding-left: 15px;
+}
+
+.leftBox ol {
+  padding-left: 15px;
+}
+.rightBox {
+  position: relative;
+  transition: all 1s linear 0s;
+}
+
+.rightBox .overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(83, 87, 205, 0.703); */
+  background-image: linear-gradient(
+    226.4deg,
+    rgba(255, 25, 0, 0.545) 28.9%,
+    rgba(254, 157, 1, 0.541) 33%,
+    rgba(255, 242, 0, 0.498) 48.6%,
+    rgba(34, 218, 1, 0.494) 65.3%,
+    rgba(0, 140, 254, 0.509) 80.6%,
+    rgba(114, 63, 254, 0.479) 100.1%
+  );
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+
+  opacity: 0;
+  transition: all 1s linear 0s;
+}
+.rightBox .overlay:hover {
+  opacity: 1;
+}
+
+/*--------------------footer part------------------*/
+
+.footer-part {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgb(170, 88, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 88, 225, 1) 0%,
+    rgba(232, 108, 108, 1) 50%,
+    rgba(207, 138, 40, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}

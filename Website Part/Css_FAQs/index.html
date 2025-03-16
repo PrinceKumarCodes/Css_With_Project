@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive FAQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <button class="faq-question">What is your return policy?</button>
+            <div class="faq-answer">
+                <p>Our return policy allows returns within 30 days of purchase. Please ensure the item is in its
+                    original condition.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">How can I track my order?</button>
+            <div class="faq-answer">
+                <p>Once your order is shipped, we will send a tracking number via email.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Do you offer customer support?</button>
+            <div class="faq-answer">
+                <p>Yes, our customer support is available 24/7 via chat and email.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript for collapsible FAQ
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+
+                // Optional: Change button icon/text when active
+                question.classList.toggle('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

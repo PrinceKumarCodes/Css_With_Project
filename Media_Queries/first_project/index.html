@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        background-color: gray;
+        padding: 2px;
+        margin: 2px;
+        border: 2px solid black;
+    }
+
+    .first-part {
+        align-items: center;
+        width: 50vw;
+        height: 50vh;
+        border: 2px solid black;
+        display: block;
+    }
+
+    .second-part {
+        width: 50vw;
+        height: 50vh;
+        border: 2px solid black;
+        display: block
+    }
+
+    .second-part .logo {
+        display: flex;
+        width: 50vw;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    @media (min-width:900px) {
+        .container {
+            flex-direction: row;
+
+        }
+    }
+
+    @media (max-width:900px) {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="first-part">
+            <p>Name:Prince kumar singh</p>
+            <p>Age:22</p>
+            <p>Email:Princekumarji@gmail.com</p>
+        </div>
+        <div class="second-part">
+            <img class="logo" src="/Media_Queries/first_project/image.png" alt="Ai-image">
+        </div>
+    </div>
+</body>
+
+</html>

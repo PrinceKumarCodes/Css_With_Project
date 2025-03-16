@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        background-color: azure;
+        border: 2px solid black;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        padding: 2px;
+        margin: 2px;
+        border: 2px solid black;
+    }
+
+    #box1 {
+        background: magenta;
+    }
+
+    #box2 {
+        background: blue;
+    }
+
+    #box3 {
+        background: red;
+    }
+
+    #box4 {
+        background: yellow;
+    }
+
+    @media (min-width:600px) {
+        .container {
+            flex-direction: row;
+            background-color: brown;
+
+        }
+    }
+
+    @media (max-width:600px) {
+        .container {
+            flex-direction: column;
+            background-color: blue;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Frist box</div>
+        <div class="box" id="box2">Second box</div>
+        <div class="box" id="box3">Third box</div>
+        <div class="box" id="box4">Fourth box</div>
+    </div>
+
+</body>
+
+</html>

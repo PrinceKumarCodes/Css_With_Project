@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: antiquewhite;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.item {
+  padding: 1rem;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(112, 112, 197);
+  border: 1px solid black;
+}
+#rotateX:hover {
+  transform: rotateX(45deg);
+}
+#rotateY:hover {
+  transform: rotateY(45deg);
+}
+#rotateZ:hover {
+  transform: rotateZ(45deg);
+}
+#translateX:hover {
+  transform: translateX(100px);
+}
+#translateY:hover {
+  transform: translateY(100px);
+}
+#translateZ:hover {
+  /* When you set translateZ then you will not be able to see changes after hovering on the box, 
+    you will have to set perspective(300px); before translate(100px), how far do you want to see . */
+  transform: perspective(300px) translateZ(100px);
+}
+#scaleX:hover {
+  transform: ske;
+}
+#scaleY:hover {
+  transform: scaleY(1.5);
+}
+#scaleZ:hover {
+  transform: perspective(300px) scaleZ(5) rotateY(45deg);
+}
+#skew:hover {
+  transform: skew(45deg);
+}
+#skewX:hover {
+  transform: skewX(45deg);
+}
+#skewY:hover {
+  transform: skewY(45deg);
+}
