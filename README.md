@@ -1,6 +1,6 @@
 # 🎨 CSS Learning Repository
 
-Welcome to my **CSS Learning Repository**! 🚀 This repository contains everything I have learned about **CSS**, covering fundamental concepts, advanced techniques, and real-world projects. Whether you're a **beginner** or looking to **improve your CSS skills**, you'll find valuable content here.
+Welcome to my **CSS Learning Repository**! This repository contains everything I have learned about **CSS**, covering fundamental concepts, advanced techniques, and real-world projects.
 
 ## 📚 Topics Covered
 
@@ -19,8 +19,4 @@ Welcome to my **CSS Learning Repository**! 🚀 This repository contains everyth
 
 ## 🎯 Purpose of This Repository  
 
-This repository serves as a **learning hub** where I document my **CSS journey**. It includes **code snippets, examples, and explanations** to reinforce my understanding of **CSS concepts**.  
-
-🔗 **Check out the repository:** [Your GitHub Repository Link]  
-
-Happy coding! 💻✨
+This repository serves as a knowledge hub where I document my Css learning journey. It contains code snippets, examples, and explanations to reinforce my understanding of Css concepts.
