@@ -2,6 +2,8 @@
 
 Welcome to my **CSS Learning Repository**! This repository contains everything I have learned about **CSS**, covering fundamental concepts, advanced techniques, and real-world projects.
 
+---
+
 ## 📚 Topics Covered
 
 ✅ **CSS Basics** → Selectors, Units, Colors, Box Sizing  
@@ -16,6 +18,8 @@ Welcome to my **CSS Learning Repository**! This repository contains everything I
 ✅ **Shadows & Effects** → Box Shadows, Text Shadows, Glow Effects  
 ✅ **CSS Projects** → Website Parts, StudySync Project, Project 1-5  
 ✅ **Additional Topics** → Backgrounds, CSS Transform, CSS Type, and More! 🎯  
+
+--- 
 
 ## 🎯 Purpose of This Repository  
 
